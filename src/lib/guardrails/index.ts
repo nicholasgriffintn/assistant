@@ -1,13 +1,13 @@
-import type { GuardrailResult, GuardrailsProvider } from "../../types";
+import type { GuardrailResult, GuardrailsProvider, IEnv } from "../../types";
 import { AppError } from "../../utils/errors";
 import { GuardrailsProviderFactory } from "./factory";
 
 export class Guardrails {
 	private static instance: Guardrails;
 	private provider: GuardrailsProvider;
-	private env: any;
+	private env: IEnv;
 
-	private constructor(env: any) {
+	private constructor(env: IEnv) {
 		this.env = env;
 
 		if (env.GUARDRAILS_PROVIDER === "bedrock") {
@@ -37,7 +37,7 @@ export class Guardrails {
 		}
 	}
 
-	public static getInstance(env: any): Guardrails {
+	public static getInstance(env: IEnv): Guardrails {
 		if (!Guardrails.instance) {
 			Guardrails.instance = new Guardrails(env);
 		}

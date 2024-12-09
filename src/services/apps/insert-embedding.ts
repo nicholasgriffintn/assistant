@@ -52,7 +52,7 @@ export const insertEmbedding = async (
 		);
 		const inserted = await embedding.insert(generated);
 
-		if (!inserted.mutationId) {
+		if (!inserted.mutationId && !inserted.documentDetails) {
 			throw new AppError("Embedding insertion failed", 400);
 		}
 

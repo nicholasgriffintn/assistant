@@ -15,11 +15,13 @@ export class BedrockGuardrailsProvider implements GuardrailsProvider {
 	private guardrailId: string;
 	private guardrailVersion: string;
 	private region: string;
+	private bedrockRuntimeEndpoint: string;
 
 	constructor(config: BedrockGuardrailsConfig) {
 		this.guardrailId = config.guardrailId;
 		this.guardrailVersion = config.guardrailVersion || "DRAFT";
 		this.region = config.region || "us-east-1";
+		this.bedrockRuntimeEndpoint = `https://bedrock-runtime.${this.region}.amazonaws.com`;
 
 		this.aws = new AwsClient({
 			accessKeyId: config.accessKeyId,
@@ -34,7 +36,7 @@ export class BedrockGuardrailsProvider implements GuardrailsProvider {
 		source: "INPUT" | "OUTPUT",
 	): Promise<GuardrailResult> {
 		try {
-			const url = `https://bedrock-runtime.${this.region}.amazonaws.com/guardrail/${this.guardrailId}/version/${this.guardrailVersion}/apply`;
+			const url = `${this.bedrockRuntimeEndpoint}/guardrail/${this.guardrailId}/version/${this.guardrailVersion}/apply`;
 
 			const body = JSON.stringify({
 				source,

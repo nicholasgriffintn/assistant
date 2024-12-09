@@ -10,7 +10,9 @@ export async function uploadImageFromChat(
 	if (modelResponse instanceof ReadableStream) {
 		const reader = modelResponse.getReader();
 		const chunks = [];
-		let done, value;
+		let done: boolean;
+		let value: any;
+  
 		while ((({ done, value } = await reader.read()), !done)) {
 			chunks.push(value);
 		}
