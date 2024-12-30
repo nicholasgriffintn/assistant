@@ -13,7 +13,7 @@ importers:
         version: 0.5.0(hono@4.6.15)
       '@hono/zod-validator':
         specifier: ^0.4.1
-        version: 0.4.1(hono@4.6.15)(zod@3.24.0)
+        version: 0.4.2(hono@4.6.15)(zod@3.24.0)
       aws4fetch:
         specifier: ^1.0.20
         version: 1.0.20
@@ -476,8 +476,8 @@ packages:
       hono: '>=3.9.0'
       valibot: ^1.0.0 || ^1.0.0-beta.4 || ^1.0.0-rc
 
-  '@hono/zod-validator@0.4.1':
-    resolution: {integrity: sha512-I8LyfeJfvVmC5hPjZ2Iij7RjexlgSBT7QJudZ4JvNPLxn0JQ3sqclz2zydlwISAnw21D2n4LQ0nfZdoiv9fQQA==}
+  '@hono/zod-validator@0.4.2':
+    resolution: {integrity: sha512-1rrlBg+EpDPhzOV4hT9pxr5+xDVmKuz6YJl+la7VCwK6ass5ldyKm5fD+umJdV2zhHD6jROoCCv8NbTwyfhT0g==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
@@ -1348,7 +1348,7 @@ snapshots:
       valibot: 1.0.0-beta.9(typescript@5.7.2)
     optional: true
 
-  '@hono/zod-validator@0.4.1(hono@4.6.15)(zod@3.24.0)':
+  '@hono/zod-validator@0.4.2(hono@4.6.15)(zod@3.24.0)':
     dependencies:
       hono: 4.6.15
       zod: 3.24.0
@@ -1638,7 +1638,7 @@ snapshots:
       '@hono/arktype-validator': 2.0.0(arktype@2.0.0-rc.25)(hono@4.6.15)
       '@hono/typebox-validator': 0.2.6(@sinclair/typebox@0.34.11)(hono@4.6.15)
       '@hono/valibot-validator': 0.5.1(hono@4.6.15)(valibot@1.0.0-beta.9(typescript@5.7.2))
-      '@hono/zod-validator': 0.4.1(hono@4.6.15)(zod@3.24.0)
+      '@hono/zod-validator': 0.4.2(hono@4.6.15)(zod@3.24.0)
       '@sinclair/typebox': 0.34.11
       '@valibot/to-json-schema': 1.0.0-beta.3(valibot@1.0.0-beta.9(typescript@5.7.2))
       arktype: 2.0.0-rc.25
