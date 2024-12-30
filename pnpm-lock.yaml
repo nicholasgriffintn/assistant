@@ -13,7 +13,7 @@ importers:
         version: 0.5.0(hono@4.6.15)
       '@hono/zod-validator':
         specifier: ^0.4.1
-        version: 0.4.1(hono@4.6.15)(zod@3.24.0)
+        version: 0.4.1(hono@4.6.15)(zod@3.24.1)
       aws4fetch:
         specifier: ^1.0.20
         version: 1.0.20
@@ -25,10 +25,10 @@ importers:
         version: 0.2.1(typescript@5.7.2)
       zod:
         specifier: ^3.24.0
-        version: 3.24.0
+        version: 3.24.1
       zod-openapi:
         specifier: ^4.1.0
-        version: 4.1.0(zod@3.24.0)
+        version: 4.1.0(zod@3.24.1)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -1076,8 +1076,8 @@ packages:
     peerDependencies:
       zod: ^3.21.4
 
-  zod@3.24.0:
-    resolution: {integrity: sha512-Hz+wiY8yD0VLA2k/+nsg2Abez674dDGTai33SwNvMPuf9uIrBC9eFgIMQxBBbHFxVXi8W+5nX9DcAh9YNSQm/w==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -1146,7 +1146,7 @@ snapshots:
       semver: 7.6.3
       vitest: 2.1.8(@types/node@22.10.1)
       wrangler: 3.95.0(@cloudflare/workers-types@4.20241205.0)
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
       - bufferutil
@@ -1171,7 +1171,7 @@ snapshots:
   '@cloudflare/workers-shared@0.11.0':
     dependencies:
       mime: 3.0.0
-      zod: 3.24.0
+      zod: 3.24.1
 
   '@cloudflare/workers-types@4.20241205.0': {}
 
@@ -1348,10 +1348,10 @@ snapshots:
       valibot: 1.0.0-beta.9(typescript@5.7.2)
     optional: true
 
-  '@hono/zod-validator@0.4.1(hono@4.6.15)(zod@3.24.0)':
+  '@hono/zod-validator@0.4.1(hono@4.6.15)(zod@3.24.1)':
     dependencies:
       hono: 4.6.15
-      zod: 3.24.0
+      zod: 3.24.1
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
@@ -1638,15 +1638,15 @@ snapshots:
       '@hono/arktype-validator': 2.0.0(arktype@2.0.0-rc.25)(hono@4.6.15)
       '@hono/typebox-validator': 0.2.6(@sinclair/typebox@0.34.11)(hono@4.6.15)
       '@hono/valibot-validator': 0.5.1(hono@4.6.15)(valibot@1.0.0-beta.9(typescript@5.7.2))
-      '@hono/zod-validator': 0.4.1(hono@4.6.15)(zod@3.24.0)
+      '@hono/zod-validator': 0.4.1(hono@4.6.15)(zod@3.24.1)
       '@sinclair/typebox': 0.34.11
       '@valibot/to-json-schema': 1.0.0-beta.3(valibot@1.0.0-beta.9(typescript@5.7.2))
       arktype: 2.0.0-rc.25
       hono: 4.6.15
       openapi-types: 12.1.3
       valibot: 1.0.0-beta.9(typescript@5.7.2)
-      zod: 3.24.0
-      zod-openapi: 4.1.0(zod@3.24.0)
+      zod: 3.24.1
+      zod-openapi: 4.1.0(zod@3.24.1)
     transitivePeerDependencies:
       - typescript
 
@@ -1692,7 +1692,7 @@ snapshots:
       workerd: 1.20241205.0
       ws: 8.18.0
       youch: 3.3.4
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -1951,8 +1951,8 @@ snapshots:
       mustache: 4.2.0
       stacktracey: 2.1.8
 
-  zod-openapi@4.1.0(zod@3.24.0):
+  zod-openapi@4.1.0(zod@3.24.1):
     dependencies:
-      zod: 3.24.0
+      zod: 3.24.1
 
-  zod@3.24.0: {}
+  zod@3.24.1: {}
