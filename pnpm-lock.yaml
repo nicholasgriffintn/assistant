@@ -28,7 +28,7 @@ importers:
         version: 3.24.0
       zod-openapi:
         specifier: ^4.1.0
-        version: 4.1.0(zod@3.24.0)
+        version: 4.2.2(zod@3.24.0)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -1070,8 +1070,8 @@ packages:
   youch@3.3.4:
     resolution: {integrity: sha512-UeVBXie8cA35DS6+nBkls68xaBBXCye0CNznrhszZjTbRVnJKQuNsyLKBTTL4ln1o1rh2PKtv35twV7irj5SEg==}
 
-  zod-openapi@4.1.0:
-    resolution: {integrity: sha512-bRCwRYhEO9CmFLyKgJX8h6j1dRtRiwOe+TLzMVPyV0pRW5vRIgb1rLgIGcuRZ5z3MmSVrZqbv3yva4IJrtZK4g==}
+  zod-openapi@4.2.2:
+    resolution: {integrity: sha512-h1H5ODEc4paf3UKH0h3tp9P3W/FeRXo7wk1bo1P7KofhfxosI4vJdOgeIt2aRyqHorxUAjd/kIvxRWENnBqI5w==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.21.4
@@ -1646,7 +1646,7 @@ snapshots:
       openapi-types: 12.1.3
       valibot: 1.0.0-beta.9(typescript@5.7.2)
       zod: 3.24.0
-      zod-openapi: 4.1.0(zod@3.24.0)
+      zod-openapi: 4.2.2(zod@3.24.0)
     transitivePeerDependencies:
       - typescript
 
@@ -1951,7 +1951,7 @@ snapshots:
       mustache: 4.2.0
       stacktracey: 2.1.8
 
-  zod-openapi@4.1.0(zod@3.24.0):
+  zod-openapi@4.2.2(zod@3.24.0):
     dependencies:
       zod: 3.24.0
 
