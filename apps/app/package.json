@@ -20,7 +20,7 @@
 		"@mlc-ai/web-llm": "^0.2.78",
 		"@tailwindcss/vite": "^4.0.5",
 		"idb": "^8.0.2",
-		"lucide-react": "^0.474.0",
+		"lucide-react": "^0.476.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-markdown": "^9.0.3",
